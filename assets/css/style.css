@@ -57,7 +57,7 @@
 				position: absolute;
 				left: 100px;
 				width: 650px;
-				height: 425px;
+				height: auto;
 				padding: 20px;
 				margin-top: 40px;
 				border: 1px solid #dddddd;
@@ -175,4 +175,117 @@
 				top: 50%;
 				box-sizing: border-box;
 				text-align: center;
+			}
+
+
+	/* Media Queries */
+
+			@media screen and (max-width: 980px) {
+				.maincontent {
+					width: 400px;
+				}
+
+				#profilephoto {
+					width: 300px;
+					height: auto;
+				}
+
+				.portfolio_content {
+					width: 400px;
+				}
+
+				.sidebar {
+					display: block;
+					left: 540px;
+				}
+			  
+			}
+
+			@media screen and (max-width: 768px) {
+				.maincontent {
+					width: 600px;
+					height: auto;
+				}
+
+				#profilephoto {
+					width: 150px;
+					height: 150px;
+				}
+
+				.portfolio_content {
+					width: 400px;
+				}
+
+				.sidebar {
+					position: absolute;
+					width: 600px;
+					top: 450px;
+					left: 100px;
+				}
+
+				ul {
+					position: absolute;
+					left: 375px;
+				}
+
+				li {
+					padding-left: 5px;
+				}
+
+				#logo {
+					position: absolute;
+					left: 100px;
+					height: 15px;
+					padding: 15px 20px 28px 15px; 
+				}
+			  
+			}
+
+			@media screen and (max-width: 640px) {
+				header {
+					position: static;
+					top: 0%;
+					width: 100%;
+					height: 80px;
+				}
+
+				.maincontent {
+					width: 500px;
+					height: auto;
+				}
+
+				#profilephoto {
+					width: 400px;
+					height: 400px;
+				}
+
+				.portfolio_content {
+					width: 400px;
+				}
+
+				.sidebar {
+					position: absolute;
+					width: 500px;
+					top: 950px;
+				}
+
+				ul {
+					position: absolute;
+					top: 100px;
+					left: 35%;
+					margin: 0px;
+				}
+
+				#logo {
+					position: absolute;
+					width: 100%;
+					padding: 20px;
+					height: 35px;
+					margin: 0px;
+					left: 0;
+					top: 0;
+					text-align: center;
+				}
+
+			  
 			}
